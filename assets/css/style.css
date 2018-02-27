@@ -150,14 +150,14 @@ input[type="radio"]:checked + label {
 }
 
 .end-content {
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px white;
 }
 
 #end-content-2 {
 	font-size: 25px;
 	font-weight: bold;
 	text-shadow: none;
-	text-shadow: 2px 2px 5px black;
+	text-shadow: 1px 1px 5px black;
 }
 
 #done{
