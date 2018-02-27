@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game: Brenton Edition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Russo+One" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+    <!-- Start of the game -->
+    <div id="start-container">
+        <!-- Static Game Logo -->
+        <h1 class="logo">X-Men Trivia</h1>
+
+        <button id="start-button">Commence Mutation</button>
+        <h2 id="three-minutes">You will have 3 minutes to complete this quiz</h2>
+    </div>
+
+    <!-- During Gameplay Container -->
+    <div id="mid-game-container">
+        <!-- Static Game Logo -->
+        <h1 class="logo">X-Men Trivia</h1>
+
+        <!-- Game Timer -->
+        <h1 id="timer-line">Time Remaining:
+            <span id="timer-number">180 Seconds</span>
+        </h1>
+
+        <!-- Game Questions -->
+
+        <h1>1) Which of the following X-Men was not one of the original five members?</h1>
+        <!-- Wolverine -->
+        <div class="answers">
+           
+            <input id="a1" type="radio" name="q1" value="Cyclops">
+            <label for="a1">Cyclops</label>
+            <input id="b1" type="radio" name="q1" value="Angel">
+            <label for="b1">Angel</label>
+            <input id="c1" type="radio" name="q1" value="Wolverine">
+            <label for="c1">Wolverine</label>
+            <input id="d1" type="radio" name="q1" value="Beast">
+            <label for="d1">Beast</label>
+        </div>
+
+        <h1>2) Juggernaut's relation to Professor X is that he is Professor X's:</h1>
+        <!-- Stepbrother -->
+        <div class="answers">
+            <input id="a2" type="radio" name="q2" value="Archenemy">
+            <label for="a2">Archenemy</label>
+            <input id="b2" type="radio" name="q2" value="Son">
+            <label for="b2">Son</label>
+            <input id="c2" type="radio" name="q2" value="Clone">
+            <label for="c2">Clone</label>
+            <input id="d2" type="radio" name="q2" value="Stepbrother">
+            <label for="d2">Stepbrother</label>
+        </div>
+
+        <h1>3) Which of the following is not one of Wolverine's mutant powers?</h1>
+        <!-- Adamantium Claws -->
+        <div class="answers">
+            <input id="a3" type="radio" name="q3" value="Accelerated Healing">
+            <label for="a3">Accelerated Healing</label>
+            <input id="b3" type="radio" name="q3" value="Heightened Sense of Smell">
+            <label for="b3">Heightened Sense of Smell</label>
+            <input id="c3" type="radio" name="q3" value="Adamantium Claws">
+            <label for="c3">Adamantium Claws</label>
+            <input id="d3" type="radio" name="q3" value="Heightened Stamina">
+            <label for="d3">Heightened Stamina</label>
+        </div>
+
+        <h1>4) Which X-Man's mutant ability is to convert potentional energy into kinetic energy?</h1>
+        <!-- Gambit -->
+        <div class="answers">
+            <input id="a4" type="radio" name="q4" value="Cannonball">
+            <label for="a4">Cannonball</label>
+            <input id="b4" type="radio" name="q4" value="Gambit">
+            <label for="b4">Gambit</label>
+            <input id="c4" type="radio" name="q4" value="Thunderbird">
+            <label for="c4">Thunderbird</label>
+            <input id="d4" type="radio" name="q4" value="Banshee">
+            <label for="d4">Banshee</label>
+        </div>
+
+        <h1>5) Which of the following villains is not a mutant?</h1>
+        <!-- Juggernaut  -->
+        <div class="answers">
+            <input id="a5" type="radio" name="q5" value="Juggernaut">
+            <label for="a5">Juggernaut</label>
+            <input id="b5" type="radio" name="q5" value="Pyro">
+            <label for="b5">Pyro</label>
+            <input id="c5" type="radio" name="q5" value="Blob">
+            <label for="c5">Blob</label>
+            <input id="d5" type="radio" name="q5" value="Sabretooth">
+            <label for="d5">Sabretooth</label>
+        </div>
+
+        <h1>6) Which of the following was never an alias for Jean Grey?</h1>
+        <!-- Sunfire -->
+        <div class="answers">
+            <input id="a6" type="radio" name="q6" value="Sunfire">
+            <label for="a6">Sunfire</label>
+            <input id="b6" type="radio" name="q6" value="Phoenix">
+            <label for="b6">Phoenix</label>
+            <input id="c6" type="radio" name="q6" value="Marvel Girl">
+            <label for="c6">Marvel Girl</label>
+            <input id="d6" type="radio" name="q6" value="Dark Phoenix">
+            <label for="d6">Dark Phoenix</label>
+        </div>
+
+        <h1>7) Which of the following is not a location in the X-Men universe?</h1>
+        <!-- Monolith X -->
+        <div class="answers">
+            <input id="a7" type="radio" name="q7" value="X-Mansion">
+            <label for="a7">X-Mansion</label>
+            <input id="b7" type="radio" name="q7" value="Asteroid M">
+            <label for="b7">Asteroid M</label>
+            <input id="c7" type="radio" name="q7" value="The Danger Room">
+            <label for="c7">The Danger Room</label>
+            <input id="d7" type="radio" name="q7" value="Monolith X">
+            <label for="d7">Monolith X</label>
+        </div>
+
+        <h1>8) One of the following is not the name of an antagoinst group to the X-Men. Which is it?</h1>
+        <!-- Battalion of Mutant Extremists -->
+        <div class="answers">
+            <input id="a8" type="radio" name="q8" value="Brotherhood of Evil Mutants">
+            <label for="a8">Brotherhood of Evil Mutants</label>
+            <input id="b8" type="radio" name="q8" value="Mutant Liberation Front">
+            <label for="b8">Mutant Liberation Front</label>
+            <input id="c8" type="radio" name="q8" value="Battalion of Mutant Extremists">
+            <label for="c8">Battalion of Mutant Extremists</label>
+            <input id="d8" type="radio" name="q8" value="Hellfire Club">
+            <label for="d8">Hellfire Club</label>
+        </div>
+
+        <h1>9) Which of the following was not the name of an X-Men storyline?</h1>
+        <!-- Psylocke's Awakening -->
+        <div class="answers">
+            <input id="a9" type="radio" name="q9" value="Psylocke's Awakening">
+            <label for="a9">Psylocke's Awakening</label>
+            <input id="b9" type="radio" name="q9" value="Days of Future Past">
+            <label for="b9">Days of Future Past</label>
+            <input id="c9" type="radio" name="q9" value="Age of Apocalypse">
+            <label for="c9">Age of Apocalypse</label>
+            <input id="d9" type="radio" name="q9" value="X-Cutioner's Song">
+            <label for="d9">X-Cutioner's Song</label>
+        </div>
+
+        <h1>10) Which of the following is not the name of a team in the X-Men universe?</h1>
+        <!-- House of M -->
+        <div class="answers">
+            <input id="a10" type="radio" name="q10" value="X-Force">
+            <label for="a10">X-Force</label>
+            <input id="b10" type="radio" name="q10" value="House of M">
+            <label for="b10">House of M</label>
+            <input id="c10" type="radio" name="q10" value="Alpha Flight">
+            <label for="c10">Alpha Flight</label>
+            <input id="d10" type="radio" name="q10" value="Excalibur">
+            <label for="d10">Excalibur</label>
+        </div>
+
+        <br>
+
+        <button id="done-button">Complete Mutation</button>
+
+    </div>
+
+    <!-- End of the game -->
+    <div id="end-container">
+        <!-- Static Game Logo -->
+        <h1 class="logo">X-Men Trivia</h1>
+
+        <h1 id="done" class="end-content"></h1>
+        <br>
+
+        <h1 class="end-content">Positive:
+            <span id="correct-answers">0</span>
+        </h1>
+        <h1 class="end-content">Negative:
+            <span id="wrong-answers">0</span>
+        </h1>
+        <h1 class="end-content">Failure to Respond:
+            <span id="unanswered">0</span>
+        </h1>
+    </div>
+
+</body>
+
+</html>
